@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+
+:root {
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	color: whitesmoke;
+}
+
+a {
+	color: #D0312D;
+	text-decoration: none;
+}
+
+.prev {
+	cursor: pointer;
+}
+
+.next {
+	cursor: pointer
+}
+
+header.banner {
+	position: relative;
+	text-align: center;
+	height: 50vh;
+	overflow: hidden;
+}
+
+img.banner {
+	width: 100%;
+	height: auto;
+	opacity: 50%;
+}
+
+header.banner>div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+h1 {
+	font-size:5rem;
+	color: #FFBD00;
+	text-shadow: 2px 2px #000000;
+}
+
+main>section:nth-child(even) {
+	height: 100vh;
+	display: flex;
+	background-color: #333333;
+}
+
+main>section:nth-child(odd) {
+	height: 100vh;
+	display: flex;
+	background-color: #f99e1a;
+}
+
+main>section:nth-child(2) {
+	font-size: 2rem;
+}
+
+main>section:not(:nth-child(2)) {
+	font-size: 1.5rem;
+}
+
+main>section:last-child {
+	font-size: 1rem;
+	height: 40vh;
+}
+
+main>section:last-child>div.text {
+	display: flex;
+	flex: 1;
+	align-items: center;
+}
+
+.text > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+}
+
+.text > div > h1 {
+	color: whitesmoke;
+	font-size: 2rem;
+}
+
+section>div.carousel {
+	display: flex;
+	flex: 1;
+	padding: 5rem;
+	justify-items: center;
+	align-items: center;
+}
+
+section>div.carousel>div.img {
+	display: flex;
+	flex: 1;
+	padding: 2rem;
+	align-items: flex-end;
+	justify-content: center;
+}
+section>div.carousel>div.img>img {
+	width: 100%;
+	height: 50%;
+	cursor: pointer;
+}
+
+section>div.carousel>div.img>p {
+	color: #f99e1a;
+	position: absolute;
+	text-shadow: 2px 2px #000000;
+	text-align: center;
+}
+
+section>div.carousel>div.img>img.img-1 {
+	display: none;
+}
+
+section>div.carousel>div.img>img.img-2 {
+	display: none;
+}
+
+section>div.carousel>div.img>img.img-3 {
+	display: none;
+}
+
+section>div.carousel>div.img>img.img-4 {
+	display: none;
+}
+
+section>div.text{
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: justify;
+	padding: 2rem;
+}
+
+section>span {
+	text-align:justify;
+}
