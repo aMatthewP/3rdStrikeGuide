@@ -15,7 +15,7 @@ function main()
 }
 
 function Redirect(url) {
-	window.location(url)
+	window.location.href= url
 }
 
 function ImageCarouselPrevious(index, n) {
